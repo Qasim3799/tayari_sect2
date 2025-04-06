@@ -31,6 +31,15 @@
         position: relative;
         height: 100vh;
         overflow-y: auto;
+
+        /* Hides scrollbar but keeps scroll functionality */
+        scrollbar-width: none;       /* Firefox */
+        -ms-overflow-style: none;    /* IE/Edge */
+    }
+
+    #sect2-wrapper::-webkit-scrollbar {
+        width: 0;
+        height: 0;
     }
 
     #div1, #div2 {
@@ -129,6 +138,7 @@
         animation: slide-out 3s linear forwards;
     }
 </style>
+
 
 
 <div id="sect2-wrapper">
